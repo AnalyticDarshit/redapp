@@ -1,0 +1,50 @@
+<h3 class="text-dark mb-4">Ledger</h3>
+                <div class="card shadow">
+                    <div class="card-header py-3">
+                        <p class="text-primary m-0 font-weight-bold">Ledger List</p>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" *ngIf="ledgerList.length > 0">
+                            <table class="table table-responsive-md text-center my-0" datatable  [dtOptions]="dtOptions">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>Group</th>
+                                        <th>Counter</th>
+                                        <th>Color</th>
+                                        <th>Icon</th>
+                                        <th>Template</th>
+                                        <th>Note</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of ledgerList" >
+                                        <td>{{data.id}}</td>
+                                        <td>{{data.name}}</td>
+                                        <td>{{data.group}}</td>
+                                        <td>{{data.counter}}</td>
+                                        <td>{{data.color}}</td>
+                                        <td><i class="fa {{data.icon}}"></i></td>
+                                        <td>{{data.template}}</td>
+                                        <td>{{data.Note}}</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>Group</th>
+                                        <th>Counter</th> 
+                                        <th>Color</th>
+                                        <th>Icon</th>
+                                        <th>Template</th>
+                                        <th>Note</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
