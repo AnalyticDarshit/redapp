@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/bootstrap/css/bootstrap.min.css",
+              "src/assets/fonts/googlefonts.css",
+              "src/assets/fonts/fontawesome-all.min.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
